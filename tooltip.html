@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+.tip {
+    position: relative;
+    cursor: pointer;
+}
+.tooltip {
+    position: absolute;
+    display: none;  
+    top: 35px;
+    background: #000000;
+    color: white;
+    width: 200px;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 6px;
+}
+.tip:hover .tooltip {
+    display: block;
+}
+.tooltip::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 10px;
+    border:8px solid transparent ;
+    border-bottom-color: #000000;
+}
+</style>
+<body>
+    <div class="tip">饥人谷（鼠标放上来）
+         <div class="tooltip">饥人谷，培养有灵魂的工程师。求知若饥，虚心似谷。</div>
+        </div>
+</body>
+</html>
