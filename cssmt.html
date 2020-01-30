@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .biaoti {
+ position: fixed;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0;
+ background-color: rgba(0, 0, 0, 0.5);
+ display: none;
+ }
+ .biaoti:target {
+     display: block;
+ }
+ .box {
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-height: 700px;
+    background:floralwhite;
+    border-radius: 4px;
+ }
+.biaoti .box > h2 {
+    padding: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+.biaoti .box .close {
+    float: right;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 8px;
+}
+.box .neirong {
+    padding: 20px;
+}
+    </style>
+<body>
+    <a href="#dianwo">点我</a>
+    <div class="biaoti" id="dianwo">
+        <div class="box" >
+            <h2>这里是标题<a class="close" href="#">X</a></h2>
+            <div class="neirong">
+            <p>这里是内容</p>
+            <p>这里是内容</p>
+            <p>这里是内容</p>
+            <p>这里是内容</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
